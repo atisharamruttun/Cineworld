@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> cart page </title>
+</head>
+<body>
+<h1> Select Movie & Showtime</h4>
+<h2> Movie</h2>
+    <select name="movie" id="movie">
+        <option value=" section">Select a movie</option>
+       <option value=" pushpa ">Pushpa</option>
+       <option value=" spiderman ">Spiderman No way home </option>
+       <option value="red_notice">Red Notice</option>
+     </select>
+<br>
+<h2>Movie Type</h2>
+<select name="movie_type" id="movie_type">
+    <option value="section">Select movie type</option>
+    <option value="3D">3D</option>
+    <option value="vo">VO</option>
+    
+</select>
+<br>
+<h2>Showtime</h2>
+<select name="showtime" id="showtime">
+        <option value="section">Select showtime</option>
+        <option value="10">10 Feb, 10:15</option>
+        <option value=" 10_2 ">10 Feb, 13:00</option>
+        <option value=" 11">11 Feb, 10:15</option>
+        <option value=" 11_2">11 Feb, 13:00</option>
+        <option value=" 12 ">12 Feb, 10:15</option>
+        <option value=" 12_2 ">12 Feb, 13:00</option>
+        <option value=" 13 ">13 Feb, 10:15 </option>
+        <option value=" 13_2">13 Feb, 13:00</option>
+        <option value=" 14 ">14 Feb, 10:15</option>
+        <option value=" 14_2">14 Feb, 13:00</option>
+</select>
+<br>
+<br>
+<button id="myBtn"> sumit</button>
+
+<script>
+    
+    document.getElementById("myBtn").addEventListener("click", myfunction);
+
+    function myfunction(){
+    let num_of_person=prompt("How many seats?");
+    // if value = pushpa then 
+    // seat *200
+    //else if value = red notice sa li *200
+    // etc ..
+    let seat=num_of_person*250
+    alert(" Total is Rs " + seat);
+    }
+   
+</script>
+
+</body>
+</html>
