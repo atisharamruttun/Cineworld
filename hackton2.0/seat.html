@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+    
+    <!--<link rel="stylesheet" href="sign_up.css" />-->
+    <!--<link rel="stylesheet" href="nav_bar.css" />-->
+    <link rel="stylesheet" href="seat.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+  
+    <button class="click" onclick="history.back()">Go Back</button>
+   
+    <div class="movie-container">
+      <label>Pick a movie:</label>
+      <select id="movie">
+        <option value="350">pushpa the rise(Rs 350)</option>
+        <option value="250">spiderman no way home (Rs 250)</option>
+        <option value="200">Red notice (RS 200)</option>
+        <option value="350">Shang Chi (Rs 350)</option>
+      </select>
+      <label>Showtime:</label>
+<select name="showtime" id="showtime">
+        <option value="section">Select showtime</option>
+        <option value="10">10 Feb, 10:15</option>
+        <option value=" 10_2 ">10 Feb, 13:00</option>
+        <option value=" 11">11 Feb, 10:15</option>
+        <option value=" 11_2">11 Feb, 13:00</option>
+        <option value=" 12 ">12 Feb, 10:15</option>
+        <option value=" 12_2 ">12 Feb, 13:00</option>
+        <option value=" 13 ">13 Feb, 10:15 </option>
+        <option value=" 13_2">13 Feb, 13:00</option>
+        <option value=" 14 ">14 Feb, 10:15</option>
+        <option value=" 14_2">14 Feb, 13:00</option>
+</select>
+
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <small>R1</small>
+        <div class="seat ">A</div>
+        <div class="seat">B</div>
+        <div class="seat">C</div>
+        <div class="seat">D</div>
+        <div class="seat">E</div>
+        <div class="seat">F</div>
+        <div class="seat">G</div>
+        <div class="seat">H</div>
+      </div>
+      <div class="row">
+        <small>R2</small>
+        <div class="seat">A</div>
+        <div class="seat">B</div>
+        <div class="seat">C</div>
+        <div class="seat occupied">D</div>
+        <div class="seat occupied">E</div>
+        <div class="seat">F</div>
+        <div class="seat">G</div>
+        <div class="seat">H</div>
+      </div>
+      <div class="row">
+        <small>R3</small>
+        <div class="seat">A</div>
+        <div class="seat">B</div>
+        <div class="seat">C</div>
+        <div class="seat">D</div>
+        <div class="seat">E</div>
+        <div class="seat">F</div>
+        <div class="seat occupied">G</div>
+        <div class="seat occupied">H</div>
+      </div>
+      <div class="row">
+        <small>R4</small>
+        <div class="seat">A</div>
+        <div class="seat">B</div>
+        <div class="seat">C</div>
+        <div class="seat">D</div>
+        <div class="seat">E</div>
+        <div class="seat">F</div>
+        <div class="seat">G</div>
+        <div class="seat">H</div>
+      </div>
+      <div class="row">
+        <small>R5</small>
+        <div class="seat">A</div>
+        <div class="seat">B</div>
+        <div class="seat">C</div>
+        <div class="seat occupied">D</div>
+        <div class="seat occupied">E</div>
+        <div class="seat">F</div>
+        <div class="seat">G</div>
+        <div class="seat">H</div>
+      </div>
+      <div class="row">
+        <small>R6</small>
+        <div class="seat">A</div>
+        <div class="seat">B</div>
+        <div class="seat">C</div>
+        <div class="seat">D</div>
+        <div class="seat occupied">E</div>
+        <div class="seat occupied">F</div>
+        <div class="seat occupied">G</div>
+        <div class="seat">H</div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of Rs<span
+        id="total"
+        >0</span>
+    </p>
+    <div class="soco">
+      <button onclick="window.location.href='';" style="font-size:22px; border-radius:15px; padding: 10px 40px; background-color:#f6c46f; color: black;"
+      >Done</button></div>
+
+<!--email-->
+      <!--<form method="post">
+        <input type="button" value="Send Email" onclick="sendEmail()"/>
+      </form>  
+      
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="seat.js"></script>
+    <script>
+      function sendEmail() {
+	Email.send({
+    Host: "smtp.gmail.com",
+    Username : "teamas458@gmail.com"
+    Password : "themoonandthestar",
+    To : 'atisharamruttun28@gmail.com',
+    From : "teamas458@gmail.com>",
+    Subject : "Comfirmation mail",
+    Body : "<email body>",
+    }).then(
+      message => alert("mail sent successfully")
+    );
+  }
+  
+  
+  
+  
+  }
+  
+    </script>-->
+    <script src="seat.js"></script>
+  </body>
+</html>

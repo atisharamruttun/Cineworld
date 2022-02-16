@@ -1,0 +1,115 @@
+<div class="buy-ticket" style="display: none;">
+					<div class="container">
+						<div class="buy-ticket-area">
+							<a href="#"><i class="icofont icofont-close"></i></a>
+							<div class="holds-the-iframe">
+								<!-- Main IFrame -->
+								<iframe src="/progsel.php" width="100%" style="border: none; min-height: 350px; height: 772px;" name="my_frame" id="Iframeimportant" onload="this.style.height=this.contentDocument.body.scrollHeight +'px';"> </iframe>
+                                <html><head>
+                                    <!-- Declare IMPORTANT Style for IFRAME UI-->
+                                    <style>body {
+                                        color:#2d2d2d !important;}
+                                    </style>
+                                    <!-- Favicon Icon -->
+                                    <!-- Bootstrap CSS -->
+                                    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all">
+                                    <!-- Slick nav CSS -->
+                                    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css" media="all">
+                                    <!-- Iconfont CSS -->
+                                    <link rel="stylesheet" type="text/css" href="assets/css/icofont.css" media="all">
+                                    <!-- Owl carousel CSS -->
+                                    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+                                    <!-- Popup CSS -->
+                                    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+                                    <!-- Main style CSS -->
+                                    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all">
+                                    <!-- Responsive CSS -->
+                                    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all">
+                                    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+                                    <!--[if lt IE 9]>
+                                    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+                                    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                                    <![endif]-->
+                                </head>
+                                <body style="background:#f5f5f5 !important;">
+                                    <script>
+                                        function clearselect(){
+                                          $('#showtimeselect')
+                                            .find('option')
+                                            .remove()
+                                            .end()
+                                            .append('<option value="">NO PROGRAM</option>')
+                                            .val('whatever')
+                                          ;
+                                        }
+                                        function MovieNameForm(x) {
+                                          document.getElementById("MovieNameForm").submit();
+                                        }
+                                        function MovieTypeForm() {
+                                         document.getElementById("MovieTypeForm").submit();
+                                        }
+                                        function MovieLocationForm() {
+                                         document.getElementById("MovieLocationForm").submit();
+                                        }
+                                        function MovieSessionForm() {
+                                         document.getElementById("MovieSessionForm").submit();
+                                        }
+                                
+                                        function nexting() {
+                                          $("#ps").text("Loading the Best Seats for you!");
+                                          var img = document.createElement("img");
+                                          img.src = "assets/img/loading.png";
+                                          var src = document.getElementById("ps");
+                                          src.appendChild(img);
+                                          document.getElementById('BookingForm').submit();
+                                        }
+                                    </script>
+                                    <div class="buy-ticket-area2">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="buy-ticket-box">
+                                                    <h4>Select Movie &amp; Showtime</h4>
+                                                    <h5>Movie</h5>
+                                                    <form id="MovieNameForm" action="" method="post">
+                                                          <select name="moviename" form="MovieNameForm" onchange="MovieNameForm(this)"><option value="">Select Movie</option><option value="WXdHR0RBPT0=">Pushpa: The Rise - Part 1</option><option value="WXdHSEJBPT0=">Sword Art Online the Movie -Progressive- Aria of a Starless Night</option><option value="WXdHR0RRPT0=">Badhaai Do</option></select></form><br>						</div>
+                                                    </div>
+                                                    <div class="col-lg-3 offset-lg-1">
+                                                        <div class="buy-ticket-box mtr-30">
+                                                            <h4>Your Selection</h4>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p>Movie Name</p>
+                                                                        <span>
+                                                                                                                    </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Movie Type</p>
+                                                                        <span>
+                                                                                                                    </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Location</p>
+                                                                        <span>
+                                                                                                                    </span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Showtime</p>
+                                                                        <span>
+                                                                                                                    </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                </body></html>
+							</div>
+						</div>
+					
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                
